@@ -192,10 +192,11 @@ main{
   color: #fff;
   background-color: #74cfae;
   font-size: 12px;
-  padding: 14px 20px;
   display: inline-block;
+  padding: 14px 20px;
   vertical-align: top;
   border: none;
+  text-decoration: none;
   transition:  color .3s;
   font-family: 'Montserrat', sans-serif;
 }
