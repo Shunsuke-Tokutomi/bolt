@@ -10,47 +10,51 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway|Work+Sans" rel="stylesheet">
-  </head>
+    <!-- google fontのリンク削除 -->
+    </head>
   <body>
-    <header class="bolt_header clearfix">
-      <div class="contact_btn_parent is-inner">
-        <i class="fa fa-bolt fa-3x"></i>
-        <div class="contact_btn">Contact</div>
+    <header class="bolt_header"> <!-- clearfix削除 -->
+      <div class="contact_btn_parent is-inner clearfix"> <!-- 高さ出すためにclearfix付与 -->
+        <i class="fa fa-bolt fa-3x bolt_icon"></i> <!-- 任意のクラス(bolt_icon)付与 -->
+        <a href="" class="contact_btn">Contact</a> <!-- aタグに変更 -->
       </div>
     </header>
     <main class="bolt_main">
       <div class="bolt_main_contents_parent">
         <div class="bolt_contents is-inner">
-          <div class="bolt_theme">
-            <h1 class="bolt_theme_text">Bolt Theme</h1>
-            <h1 class="bolt_bootstrap_text">FREE BOOTSTRAP THEMES</h1>
-          </div>
+          <h1 class="bolt_theme_text">Bolt Theme</h1>　<!-- 階層が１つ多かったのでdivタグ削除 -->
+          <p class="bolt_bootstrap_text">FREE BOOTSTRAP THEMES</p> <!-- pタグに変更 -->
         </div>
       </div>
-      <article class="bolt_can-do clearfix">
-        <div class="can-do_parent is-inner">
+      <article class="bolt_can-do_parent"> <!-- clearfix削除  クラス名をbolt_can-do_parentに変更-->
+        <div class="can-do_contents is-inner clearfix"> <!-- clearfix付与 　クラス名をcan-do_contentsに変更　-->
           <img src="img/iphone.png" alt="iphone" class="bolt_iphone">
-          <div class="can-do_text_parent clearfix"></div>
-            <p class="bolt_can-do_title">WHAT WE CAN DO?</p>
-            <p class="bolt_can-do_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the<br>1500s, when an unknown printer took a galley of type and scrambled it to<br>make a type specimen book.</p>
+          <div class="can-do_text_parent">
+            <h2 class="bolt_can-do_title">WHAT WE CAN DO?</h2> <!-- h2タグに変更 -->
+            <p class="bolt_can-do_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> <!-- 改行削除 -->
           </div>
         </div>
       </article>
-      <section class="bolt_our-work">
-        <div class="our-work_parent is-inner">
-          <p class="our-work_title">OUR LATEST WORK</p>
-          <div class="our_work_upside clearfix">
-            <a href="">
+      <section class="bolt_our-work_parent"> <!-- クラス名をbolt_our-work_parentに変更 -->
+        <div class="our-work_contents is-inner"> <!-- クラス名をour-work_contentsに変更 -->
+          <h2 class="our-work_title">OUR LATEST WORK</h2> <!-- h2タグに変更 -->
+          <div class="our_work_picture_parent clearfix"> <!-- 画像毎にaタグ付与。画像3枚ずつの塊を6枚一塊に変更 -->
+            <a href="" class="work_picture_link">
               <img src="img/01.jpg" alt="" class="our_work_picture">
+            </a>
+            <a href="" class="work_picture_link">
               <img src="img/02.jpg" alt="" class="our_work_picture">
+            </a>
+            <a href="" class="work_picture_link">
               <img src="img/03.jpg" alt="" class="our_work_picture">
             </a>
-          </div>
-          <div class="our_work_downside clearfix">
-            <a href="">
+            <a href="" class="work_picture_link">
               <img src="img/04.jpg" alt="" class="our_work_picture">
+            </a>
+            <a href="" class="work_picture_link">
               <img src="img/05.jpg" alt="" class="our_work_picture">
+            </a>
+            <a href="" class="work_picture_link">
               <img src="img/06.jpg" alt="" class="our_work_picture">
             </a>
           </div>
@@ -62,7 +66,7 @@
       </section>
       <section class="bolt_our-skills">
         <div class="our-skills_parent is-inner">
-          <p class="our-skills_title">OUR SKILLS</p>
+          <h2 class="our-skills_title">OUR SKILLS</h2>　<!-- h2タグに変更 -->
           <div class="our-skills_picture_parent">
             <figure class="skills_picture_parent">
               <img src="img/circle_01.png" alt="" class="our_skills_picture">
@@ -83,28 +87,28 @@
           </div>
         </div>
       </section>
-      <div class="bolt_sns-link">
-        <nav class="sns-link_parent is-inner">
-          <a href="">
-            <i class="fa fa-facebook fa-3x is-icon"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-dribbble fa-3x is-icon"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-twitter fa-3x is-icon"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-envelope fa-3x is-icon"></i>
-          </a>
-        </nav>
-      </div>
-      <footer class="bolt_footer clearfix">
-        <div class="footer_parent is-inner">
-          <p class="footer_text">Crafted with♥by BlackTie.co.</p>
+      <nav class="bolt_sns-link"> <!-- divをnavに変更 -->
+        <div class="sns-link_parent is-inner"> <!-- navをdivに変更 -->
+            <a href="" class="sns_icon">
+              <i class="fa fa-facebook fa-3x is-icon"></i>
+            </a>
+            <a href="" class="sns_icon">
+              <i class="fa fa-dribbble fa-3x is-icon"></i>
+            </a>
+            <a href="" class="sns_icon">
+              <i class="fa fa-twitter fa-3x is-icon"></i>
+            </a>
+            <a href="" class="sns_icon">
+              <i class="fa fa-envelope fa-3x is-icon"></i>
+            </a>
         </div>
-      </footer>
+      </nav>
     </main>
+    <footer class="bolt_footer clearfix">
+      <div class="footer_parent is-inner">
+        <p class="footer_text">Crafted with♥by BlackTie.co.</p>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
