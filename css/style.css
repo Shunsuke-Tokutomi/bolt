@@ -25,6 +25,10 @@ body{
 }
 /* bodyタグにLato付与 */
 
+img{
+  vertical-align: middle;
+}
+
 /* header */
 
 .bolt_header{
@@ -102,7 +106,7 @@ main{
   padding-top: 50px;
 }
 
-.bolt_iphone{
+.iphone_parent{
   float: left;
 }
 
@@ -177,7 +181,7 @@ main{
 
 .our-work_text{
   font-size: 20px;
-  padding-right: 90px;
+  margin-right: 90px;
   display: inline-block;
 }
 
@@ -250,13 +254,9 @@ main{
   padding-bottom: 200px;
 }
 
-.is-icon{
-  display: inline-block;
-  color: #74cfae;
-}
-
 .sns_icon{
   display: block;
+  color: #74cfae;
   width: 185px;
   padding-top: 20px;
   padding-bottom: 20px;
