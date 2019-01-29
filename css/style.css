@@ -95,23 +95,20 @@ main{
 .bolt_can-do_parent{
   widows: 100%;
   background-color: #74cfae;
+  text-align: center;
 }
 
 .can-do_contents{
   padding-top: 50px;
-  display: table;
 }
 
 .bolt_iphone{
-  /* float: left; */
-  display: table-cell;
+  float: left;
 }
 
 .can-do_text_parent{
-  /* float: right; */
-  display: table-cell;
-  font-size: 0;
-  vertical-align: middle;
+  width: 650px;
+  float: right;
 }
 
 .bolt_can-do_title{
@@ -256,12 +253,9 @@ main{
 .is-icon{
   display: inline-block;
   color: #74cfae;
-  /* width: 185px;
-  padding-top: 20px;
-  padding-bottom: 20px; */
 }
 
-.sns-icon{
+.sns_icon{
   display: block;
   width: 185px;
   padding-top: 20px;
@@ -269,9 +263,10 @@ main{
   transition: all .3s;
 }
 
-.sns-icon:hover{
+.sns_icon:hover{
   background-color: #fff;
 }
+/* aタグにhover */
 
 /* footer */
 
