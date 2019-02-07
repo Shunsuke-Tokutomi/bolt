@@ -1,13 +1,46 @@
 @charset "utf-8";
 
-/* SP TAB */
-@media screen and (min-width:600px) and ( max-width:959px) {
-
-}
 /* PC */
-@media screen and (min-width:960px) and ( max-width:1280px) {
+@media screen and (min-width:1200px) {
 
 }
+
+/* SP
+@media screen and ( max-width:767px) {
+  header main footer{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .is-inner{
+    width: 97%;
+  }
+
+  .bolt_contents{
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .bolt_theme_text{
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .bolt_bootstrap_text{
+    font-size: 30px;
+  }
+} */
+
+/* TAB 
+@media screen and (min-width:768px) and ( max-width:1199px) {
+  header main footer{
+    width: 100%;
+  }
+
+  .is-inner{
+    width: 97%;
+  }
+} */
 
 .clearfix::after{
   content: "";
@@ -29,6 +62,7 @@ img{
   vertical-align: middle;
 }
 
+/* @media screen and (min-width:1200px) { */
 /* header */
 
 .bolt_header{
@@ -40,7 +74,6 @@ img{
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  z-index: 24;
 }
 /* padding付与 */
 
@@ -283,3 +316,216 @@ main{
   text-align: right;
 }
 /* padding-top,padding-bottom削除。float: right;をtext-align: right;に変更 */
+
+
+/* TAB  */
+@media screen and (min-width:768px) and ( max-width:1199px) {
+  header main footer{
+    width: 100%;
+  }
+
+  .is-inner{
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .can-do_contents{
+    padding-top:50px;
+    padding-bottom: 25px; 
+  }
+
+  .iphone_parent{
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .can-do_text_parent{
+    margin: 0 auto;
+    float: none;
+  }
+
+  .bolt_can-do_title{
+    margin-bottom: 35px;
+  }
+
+  .bolt_our-work_parent{
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .work_picture_link{
+    display: block;
+    text-align: center;
+    /* margin-top: 40px; */
+    /* margin-bottom: 80px; */
+    margin-left: 0;
+    float: none;
+  }
+
+  .work_picture_link:nth-child(3n){
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .work_picture_link:nth-child(2n+1){
+    margin-top: 0;
+  }
+
+  .our-work_text{
+    display: block;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .skills_picture_parent{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 88px;
+  }
+
+  .skills_picture_parent:last-child{
+    margin-bottom: 0;
+  }
+
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+  header main footer{
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .is-inner{
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .contact_btn{
+    display: none;
+  }
+
+  /* .contact_btn:before{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    content: ''
+  } */
+
+  .contact_hb::before{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    content: ''
+  }
+
+  .contact_line::before{
+    position: absolute;
+    left: 4px;
+    height: 4px;
+    width: 8px;
+    border: 1px solid #ddd;
+    /* border-radius: 4px; */
+    display: block;
+    box-sizing: border-box;
+    content: ''
+  }
+
+  /* .contact_hb span,
+  .contact_hb span:before,
+  .contact_hb span:after{
+    height: 3px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    content: ''
+  }
+
+  .contact_hb span::before{
+    bottom: -8px;
+    content: ''
+  }
+
+  .contact_hb span::after{
+    bottom: -16px;
+    content: ''
+  } */
+
+  .bolt_contents{
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .bolt_theme_text{
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .bolt_bootstrap_text{
+    font-size: 30px;
+  }
+
+  .can-do_contents{
+    float: none;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .iphone_parent{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .can-do_text_parent{
+    float: none;
+    width: 97%;
+  }
+
+  .work_picture_link{
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    float: none;
+  }
+
+  .work_picture_link:nth-child(3n){
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .work_picture_link:nth-child(2n+1){
+    margin-top: 0;
+  }
+
+  .our-work_text{
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .skills_picture_parent{
+    display: block;
+    margin-left: 0;
+    margin-bottom: 88px;
+  }
+
+  .skills_picture_parent:last-child{
+    margin-bottom: 0;
+  }
+
+  .sns-link_parent{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sns_icon{
+    margin: 0 auto;
+  }
+
+}
