@@ -405,54 +405,30 @@ main{
     display: none;
   }
 
-  /* .contact_btn:before{
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    content: ''
-  } */
-
-  .contact_hb::before{
-    position: relative;
-    display: inline-block;
+  .contact_hb_parent{
+    float: right;
     box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    content: ''
+    /* vertical-align: middle; */
   }
 
-  .contact_line::before{
-    position: absolute;
-    left: 4px;
-    height: 4px;
-    width: 8px;
+  .contact_hb{
     border: 1px solid #ddd;
-    /* border-radius: 4px; */
+    border-radius: 4px;
     display: block;
-    box-sizing: border-box;
-    content: ''
-  }
-
-  /* .contact_hb span,
-  .contact_hb span:before,
-  .contact_hb span:after{
-    height: 3px;
     padding: 10px;
+    vertical-align: middle;
+  }
+
+  .contact_line{
+    display: block;
+    width: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    content: ''
+    margin-bottom: 3px;
   }
 
-  .contact_hb span::before{
-    bottom: -8px;
-    content: ''
+  .contact_line:last-child{
+    margin-bottom: 0px;
   }
-
-  .contact_hb span::after{
-    bottom: -16px;
-    content: ''
-  } */
 
   .bolt_contents{
     padding-top: 160px;
