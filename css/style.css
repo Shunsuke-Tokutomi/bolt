@@ -389,7 +389,6 @@ main{
 @media screen and (max-width:767px) {
   header main footer{
     width: 100%;
-    /* overflow: hidden; */
   }
 
   .is-inner{
@@ -458,6 +457,13 @@ main{
     float: none;
     width: 97%;
   }
+
+  .our_work_picture_parent{
+    display: block;
+    margin: 0 auto;
+    max-width: 48%;
+  }
+
 
   .work_picture_link{
     display: block;
