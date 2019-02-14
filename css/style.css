@@ -400,6 +400,7 @@ main{
     width: 97%;
     margin: 0 auto;
   }
+  
 
   .contact_btn{
     display: none;
@@ -408,15 +409,15 @@ main{
   .contact_hb_parent{
     float: right;
     box-sizing: border-box;
-    /* vertical-align: middle; */
+    vertical-align: middle;
   }
 
   .contact_hb{
     border: 1px solid #ddd;
     border-radius: 4px;
     display: block;
+    margin-top: 7px;
     padding: 10px;
-    vertical-align: middle;
   }
 
   .contact_line{
